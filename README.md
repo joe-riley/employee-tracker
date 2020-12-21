@@ -24,6 +24,9 @@ A CMS that will allow a business owner to manage their employees and their group
 * WHEN I choose to update an employee role
 * THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
 
+### Data Model
+![Data Model](docs/12-sql-homework-demo-02.png)
+
 ## Mock Up
 ![Mock Up](docs/12-sql-homework-demo-01.gif)
 

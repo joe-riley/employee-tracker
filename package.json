@@ -8,9 +8,10 @@
   },
   "scripts": {
     "test": "jest",
-    "db_init": "mysql -u root -p employees < db/schema.sql",
-    "db_seed": "mysql -u root -p employees < db/seed.sql",
-    "dev": "node app.js"
+    "db-init": "mysql -u root -p employees < db/schema.sql",
+    "db-seed": "mysql -u root -p employees < db/seed.sql",
+    "dev": "node app.js",
+    "dev-watch": "node ./node_modules/nodemon/bin/nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -30,11 +31,16 @@
     "url": "https://github.com/joe-riley/employee-tracker/issues"
   },
   "homepage": "https://github.com/joe-riley/employee-tracker#readme",
+  "jest": {
+    "bail": 1,
+    "verbose": true
+  },
   "dependencies": {
     "inquirer": "^7.3.3",
     "mysql2": "^2.2.5"
   },
   "devDependencies": {
-    "jest": "^26.6.3"
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6"
   }
 }

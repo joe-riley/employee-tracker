@@ -1,5 +1,7 @@
 const mysql = require('mysql2/promise');
 
+// A raw implementation of an Active Record pattern.
+
 const connect = async() => {
   const conn = await mysql.createConnection({
     host: 'localhost',
